@@ -50,6 +50,7 @@ header {
 
 nav {
   background-color: var(--cor-escura);
+  color: #ffffff; 
 }
 
 .menu {
