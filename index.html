@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Página Inicial | Almir Araujo</title>
+  <meta name="description" content="Página inicial de Almir Araujo, estudante de desenvolvimento web, com informações pessoais e os cursos do certificado de Programação de Computadores e Web.">
+  <meta name="author" content="Almir Araujo">
+
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+
+  <!-- Fonte do Google Fonts (Nunito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <!-- JavaScript-->
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/curso.js" defer></script>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO: Menu hambúrguer -->
+  <header>
+    <div class="marca">
+      <img src="imagens/logo.svg" alt="Logotipo do site" width="48" height="48">
+      <span class="nome-site">Almir Araujo</span>
+    </div>
+
+    <!-- Obs: O botão só aparece em telas pequenas (o CSS esconde nas grandes) -->
+    <button id="botaoMenu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <ul id="menu" class="menu">
+      <li><a href="index.html" aria-current="page">Página Inicial</a></li>
+      <li><a href="camara/index.html">Projeto da Câmara</a></li>
+      <li><a href="final/index.html">Projeto Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Página Inicial</h1>
+
+    <section class="sobre-mim">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Meu nome é Almir Araujo e sou estudante da BYU, do curso de Desenvolvimento Web. A área da Tecnologia está na minha vida desde a adolescência, já trabalhei como Analista de Redes FTTH. Hoje busco uma colocação no mercado de Programação e por isso estou buscando me especializar e aprender mais sobre.</p>
+    </section>
+
+    <section class="foto">
+      <h2>Foto do Estudante</h2>
+      <img src="imagens/perfil.jpg" alt="Foto de Almir Araujo" width="300" height="300">
+    </section>
+
+    <section class="cursos">
+      <h2>Cursos de Certificação Web</h2>
+
+      <div class="filtros">
+        <button id="botaoTodos" type="button">Todos</button>
+        <button id="botaoCSE" type="button">CSE</button>
+        <button id="botaoWDD" type="button">WDD</button>
+      </div>
+
+      <ul id="listaCursos"></ul>
+
+      <p class="creditos">O total de créditos pelos cursos acima é <span id="totalCreditos">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="redes">
+      <a href="https://almiraraujo1.github.io/wdd231" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="imagens/github.svg" alt="" width="48" height="48">
+      </a>
+      <a href="https://www.linkedin.com/in/francisco-almir-de-araujo-8a697866" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="imagens/linkedin.svg" alt="" width="48" height="48">
+      </a>
+      <a href="https://x.com/AlmirAraujo1" target="_blank" rel="noopener" aria-label="X">
+        <img src="imagens/x.svg" alt="" width="48" height="48">
+      </a>
+    </div>
+
+    <div class="rodape-texto">
+      <p>&copy; <span id="anoAtual"></span> &bull; Almir Araujo &bull; Ceará, Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
