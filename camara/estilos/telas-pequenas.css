@@ -1,0 +1,218 @@
+/* ===== Estilos para telas pequenas (celular, a partir de 320px) ===== */
+
+:root {
+  --cor-primaria: #0a4d68;   
+  --cor-secundaria: #f4a259;  
+  --cor-fundo: #f4f6f8;
+  --cor-texto: #222222;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+/* Plus: Mostra um contorno quando a pessoa usa o teclado!!! */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cor-secundaria);
+  outline-offset: 2px;
+}
+
+/* ----- Cabeçalho ----- */
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;                 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome-site {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.botao-menu {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.7rem;
+  cursor: pointer;
+}
+
+/* Segredo do Menu: O menu fica escondido até clicar no botão */
+nav {
+  display: none;
+  width: 100%;
+}
+
+nav.aberto {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav a.ativo {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  font-weight: bold;
+}
+
+/* ----- Conteúdo principal ----- */
+main {
+  padding: 1rem;
+}
+
+.topo-diretorio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.topo-diretorio h1 {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+}
+
+/* Botões de Grade e Lista */
+.botoes-visao button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-primaria);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.botoes-visao button.ativo {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+/* ----- Área dos Cartões ----- */
+#membros {
+  display: grid;
+  gap: 1rem;
+}
+
+#membros.grade {
+  grid-template-columns: 1fr;
+}
+
+.cartao {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cartao img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto 0.75rem auto;
+  border-radius: 6px;
+}
+
+.cartao h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cartao p {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.cartao a {
+  font-size: 0.85rem;
+  color: #0066cc;
+  overflow-wrap: anywhere; 
+}
+
+/* Etiqueta - Nível de Associação */
+.cartao .nivel {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  border-radius: 1rem;
+  padding: 0.1rem 0.8rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* ----- Visão Lista ----- */
+#membros.lista {
+  gap: 0;   
+}
+
+#membros.lista .cartao {
+  text-align: left;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.75rem 1rem;
+}
+
+#membros.lista .cartao:nth-child(odd) {
+  background-color: #e8f3f6;
+}
+
+#membros.lista .cartao img,
+#membros.lista .cartao .nivel {
+  display: none;
+}
+
+/* ----- Rodapé ----- */
+footer {
+  background-color: var(--cor-primaria);   
+  color: white;                            
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* Título em negrito */
+.rodape-titulo {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+.rodape-redes {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.rodape-redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;   
+}
+
+.rodape-redes img {
+  width: 1.4rem;
+  height: 1.4rem;
+}

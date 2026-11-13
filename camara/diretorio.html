@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Diretório de Empresas | Câmara de Comércio de Caucaia</title>
+  <meta name="description" content="Conheça as empresas associadas à Câmara de Comércio de Caucaia, no Ceará: endereços, telefones e sites dos negócios da nossa cidade.">
+  <meta name="author" content="Almir Araujo">
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+
+  <!-- Metas do Facebook (Open Graph) -->
+  <meta property="og:title" content="Diretório de Empresas | Câmara de Comércio de Caucaia">
+  <meta property="og:description" content="Conheça as empresas associadas à Câmara de Comércio de Caucaia e apoie o comércio local.">
+  <meta property="og:image" content="https://almiraraujo1.github.io/wdd231/camara/imagens/favicon.svg">
+  <meta property="og:url" content="https://almiraraujo1.github.io/wdd231/camara/diretorio.html">
+  <meta property="og:type" content="website">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css" media="screen and (min-width: 768px)">
+
+  <!-- JavaScript -->
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/diretorio.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header>
+    <p class="nome-site">Câmara de Comércio de Caucaia</p>
+
+    <!-- Botão do menu (só aparece no celular) -->
+    <button id="menu-botao" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <!-- Navegação principal -->
+    <!-- Confira se essas páginas são as mesmas do mapa do site do planejamento -->
+    <nav id="menu-principal">
+      <ul>
+        <li><a href="diretorio.html">Início</a></li>
+        <li><a href="diretorio.html" aria-current="page" class="ativo">Diretório</a></li>
+        <li><a href="diretorio.html">Associe-se</a></li>
+        <li><a href="diretorio.html">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== CONTEÚDO PRINCIPAL ========== -->
+  <main>
+    <div class="topo-diretorio">
+      <h1>Diretório de Empresas</h1>
+
+      <!-- Botões(Grade e Lista) -->
+      <div class="botoes-visao">
+        <button id="botao-grade" class="ativo" aria-label="Ver em grade" aria-pressed="true">▦</button>
+        <button id="botao-lista" aria-label="Ver em lista" aria-pressed="false">☰</button>
+      </div>
+    </div>
+
+    <!-- Criação cartões das empresas - JavaScript -->
+    <section id="membros" class="grade">
+      <p>Carregando empresas...</p>
+    </section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer>
+  <div class="rodape-contato">
+    <p class="rodape-titulo">Câmara de Comércio de Caucaia</p>
+    <p>R. Joaquim Bento Cavalcante, 620 - Grilo</p>
+    <p>Caucaia - CE, 61600-440</p>
+    <p>contato@camaracaucaia.com.br</p>
+    <p>(85) 3342-1021</p>
+  </div>
+
+  <div class="rodape-redes">
+    <a href="https://www.youtube.com" target="_blank" rel="noopener">
+      <img src="imagens/youtube.svg" alt="YouTube" width="24" height="24">
+    </a>
+    <a href="https://x.com" target="_blank" rel="noopener">
+      <img src="imagens/x.svg" alt="X" width="24" height="24">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+      <img src="imagens/linkedin.svg" alt="LinkedIn" width="24" height="24">
+    </a>
+  </div>
+
+  <div class="rodape-projeto">
+    <p class="rodape-titulo">Projeto de Aula WDD231</p>
+    <p>Almir Araujo</p>
+    <p>&copy; <span id="ano"></span> Câmara de Comércio de Caucaia</p>
+    <p>Última modificação: <span id="ultima-modificacao"></span></p>
+  </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* O tamanho da caixa passa a incluir o padding e a borda */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Tirando as margens padrão */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+/* Tirando as bolinhas e o espaço das listas */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Imagens nunca passam do tamanho da tela */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Botões usam a mesma fonte do resto da página */
+button {
+  font: inherit;
+}

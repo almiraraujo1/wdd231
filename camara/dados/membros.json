@@ -1,0 +1,90 @@
+[
+  {
+    "nome": "Pizzaria Amigão",
+    "endereco": "Av. Contorno Oeste, 668 - Nova Metrópole",
+    "cidade": "Caucaia CE 61658-040",
+    "telefone": "(85) 3213-3320",
+    "site": "https://amigaopizzaria.byappfood.com.br/",
+    "imagem": "amigao.png",
+    "nivel": 1,
+    "categoria": "Pizzaria",
+    "descricao": "Pizzaria, Sorvetes e Massas."
+  },
+  {
+    "nome": "Casa Pio",
+    "endereco": "Av. Dom Almeida Lustosa, 2687 - Jurema",
+    "cidade": "Caucaia CE 61650-000",
+    "telefone": "(85) 3464-6091",
+    "site": "http://www.casapio.com.br/",
+    "imagem": "casapio.png",
+    "nivel": 3,
+    "categoria": "Calçados",
+    "descricao": "Calçados Masculinos, Femininos e Infantil."
+  },
+  {
+    "nome": "Panutri",
+    "endereco": "Av. C - Nova Metrópole, Caucaia - CE",
+    "cidade": "Caucaia CE 61658-070",
+    "telefone": "(85) 98823-5497",
+    "site": "https://www.instagram.com/panutrisa",
+    "imagem": "panutri.png",
+    "nivel": 2,
+    "categoria": "Padaria",
+    "descricao": "Tudo em Pães, Bolos, Tortas e Salgados para você."
+  },
+  {
+    "nome": "Komaki - Culinária Oriental",
+    "endereco": "Av. A, 251 - Nova Metrópole",
+    "cidade": "Caucaia CE 61658-050",
+    "telefone": "(85) 98767-1752",
+    "site": "http://komakisushi.menudino.com/",
+    "imagem": "komaki.png",
+    "nivel": 1,
+    "categoria": "Restaurante",
+    "descricao": "Sushi, Yaksobas e muito mais da cultura oriental."
+  },
+  {
+    "nome": "Drogasil",
+    "endereco": "Av. São Vicente de Paula, S/N - Araturi",
+    "cidade": "Caucaia CE 61655-000",
+    "telefone": "(11) 3004-8007",
+    "site": "https://www.drogasil.com.br/",
+    "imagem": "drogasil.png",
+    "nivel": 3,
+    "categoria": "Farmácia",
+    "descricao": "Medicamentos, perfumaria e entrega em domicílio."
+  },
+  {
+    "nome": "Variedades Supermercados",
+    "endereco": "Av. Contorno Leste, bloco 06 - Nova Metrópole",
+    "cidade": "Caucaia CE 61658-032",
+    "telefone": "(85) 3342-1006",
+    "site": "https://www.variedadessupermercados.com.br",
+    "imagem": "variedades.png",
+    "nivel": 1,
+    "categoria": "Supermercado",
+    "descricao": "Frutas, Cereais, Carnes e Materiais de Limpeza."
+  },
+  {
+    "nome": "Sapataria Nova",
+    "endereco": "Av. Edson da Mota Correia, 620 - Centro",
+    "cidade": "Caucaia CE 61600-040",
+    "telefone": "0800 707 0566",
+    "site": "https://www.sapatarianova.com.br/",
+    "imagem": "sapatarianova.png",
+    "nivel": 3,
+    "categoria": "Calçados",
+    "descricao": "Tudo em Calçados, Mochilas e Materiais Esportivos."
+  },
+  {
+    "nome": "Pague Menos",
+    "endereco": "Av. Dom Almeida Lustosa, 2686 - Jurema",
+    "cidade": "Caucaia CE 61600-000",
+    "telefone": "(85) 4002-8282",
+    "site": "https://www.paguemenos.com.br",
+    "imagem": "paguemenos.png",
+    "nivel": 3,
+    "categoria": "Farmácia",
+    "descricao": "Medicamentos, Genéricos e produtos de beleza."
+  }
+]

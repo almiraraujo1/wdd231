@@ -1,0 +1,76 @@
+/* ===== Estilos para telas grandes (768px ou mais) ===== */
+
+header {
+  flex-wrap: nowrap;
+  padding: 1rem 2rem;
+}
+
+.nome-site {
+  font-size: 1.4rem;
+}
+
+.botao-menu {
+  display: none;
+}
+
+nav {
+  display: block;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav a {
+  border-top: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.ativo:hover {
+  background-color: var(--cor-secundaria);
+}
+
+/* Conteúdo centralizado, com largura máxima */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.topo-diretorio h1 {
+  font-size: 1.8rem;
+}
+
+#membros.grade {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Lista com colunas: nome | endereço | telefone | site */
+#membros.lista .cartao {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr 1.6fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+#membros.lista .cartao h2,
+#membros.lista .cartao p {
+  margin-bottom: 0;
+}
+
+footer {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+.rodape-redes {
+  justify-content: center;
+  align-items: flex-start;
+}
