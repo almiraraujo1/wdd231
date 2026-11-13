@@ -1,76 +1,82 @@
 /* ===== Estilos para telas grandes (768px ou mais) ===== */
 
-header {
-  flex-wrap: nowrap;
-  padding: 1rem 2rem;
-}
+@media (min-width: 768px) {
 
-.nome-site {
-  font-size: 1.4rem;
-}
+  /* Cabeçalho: nome do site de um lado e menu do outro */
+  header {
+    flex-wrap: nowrap;
+    padding: 1rem 2rem;
+  }
 
-.botao-menu {
-  display: none;
-}
+  .nome-site {
+    font-size: 1.4rem;
+  }
 
-nav {
-  display: block;
-  width: auto;
-}
+  /* O botão do menu some, porque o menu já aparece */
+  .botao-menu {
+    display: none;
+  }
 
-nav ul {
-  display: flex;
-  gap: 0.5rem;
-}
+  nav {
+    display: block;
+    width: auto;
+  }
 
-nav a {
-  border-top: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-}
+  nav ul {
+    display: flex;
+    gap: 0.5rem;
+  }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
+  nav a {
+    border-top: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
 
-nav a.ativo:hover {
-  background-color: var(--cor-secundaria);
-}
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 
-/* Conteúdo centralizado, com largura máxima */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+  nav a.ativo:hover {
+    background-color: var(--cor-secundaria);
+  }
 
-.topo-diretorio h1 {
-  font-size: 1.8rem;
-}
+  /* Conteúdo centralizado, com largura máxima */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
 
-#membros.grade {
-  grid-template-columns: repeat(3, 1fr);
-}
+  .topo-diretorio h1 {
+    font-size: 1.8rem;
+  }
 
-/* Lista com colunas: nome | endereço | telefone | site */
-#membros.lista .cartao {
-  display: grid;
-  grid-template-columns: 1.2fr 1.5fr 1fr 1.6fr;
-  gap: 1rem;
-  align-items: center;
-}
+  #membros.grade {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-#membros.lista .cartao h2,
-#membros.lista .cartao p {
-  margin-bottom: 0;
-}
+  /* Lista com colunas: nome | endereço | telefone | site */
+  #membros.lista .cartao {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1fr 1.6fr;
+    gap: 1rem;
+    align-items: center;
+  }
 
-footer {
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
-}
+  #membros.lista .cartao h2,
+  #membros.lista .cartao p {
+    margin-bottom: 0;
+  }
 
-.rodape-redes {
-  justify-content: center;
-  align-items: flex-start;
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+
+  .rodape-redes {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
 }
