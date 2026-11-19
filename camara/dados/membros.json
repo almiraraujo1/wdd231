@@ -30,7 +30,7 @@
     "imagem": "panutri.png",
     "nivel": 2,
     "categoria": "Padaria",
-    "descricao": "Tudo em Pães, Bolos, Tortas e Salgados para você."
+    "descricao": "Tudo em Pães, Bolos, Tortas e Salgados."
   },
   {
     "nome": "Komaki - Culinária Oriental",
@@ -52,7 +52,7 @@
     "imagem": "drogasil.png",
     "nivel": 3,
     "categoria": "Farmácia",
-    "descricao": "Medicamentos, perfumaria e entrega em domicílio."
+    "descricao": "Medicamentos, perfumaria e cosméticos."
   },
   {
     "nome": "Variedades Supermercados",
@@ -74,7 +74,7 @@
     "imagem": "sapatarianova.png",
     "nivel": 3,
     "categoria": "Calçados",
-    "descricao": "Tudo em Calçados, Mochilas e Materiais Esportivos."
+    "descricao": "Tudo em Calçados e Mochilas."
   },
   {
     "nome": "Pague Menos",

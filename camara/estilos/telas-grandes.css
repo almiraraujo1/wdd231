@@ -79,4 +79,25 @@
     align-items: flex-start;
   }
 
+
+  /* Início CSS Página Inicial */
+  /* Página inicial: hero mais alta */
+  .hero img {
+    height: 400px;
+  }
+
+  .titulo-pagina {
+    font-size: 1.8rem;
+  }
+
+  /* Painel em 3 colunas: eventos (mais largo), clima e previsão */
+  .painel {
+    grid-template-columns: 2fr 1.3fr 1fr;
+  }
+
+  /* 3 empresas lado a lado */
+  .destaques-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Final CSS Página Inicial */  
 }
