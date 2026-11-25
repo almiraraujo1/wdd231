@@ -22,12 +22,6 @@ const minima = document.querySelector("#minima");
 const umidade = document.querySelector("#umidade");
 const listaPrevisao = document.querySelector("#previsao");
 
-// Transformar o horário da API (em segundos) em hora e minuto, ex: 05:32
-function formatarHora(segundos) {
-  const data = new Date(segundos * 1000);
-  return data.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
-}
-
 // Busca o clima atual
 async function carregarClima() {
   try {

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Associe-se | Câmara de Comércio de Caucaia</title>
+  <meta name="description" content="Peça a sua associação à Câmara de Comércio de Caucaia. Conheça os níveis NP, Bronze, Prata e Ouro e preencha o formulário.">
+  <meta name="author" content="Almir Araujo">
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+
+  <!-- Metas do Facebook (Open Graph) -->
+  <meta property="og:title" content="Associe-se | Câmara de Comércio de Caucaia">
+  <meta property="og:description" content="Conheça os níveis de associação e faça parte da Câmara de Comércio de Caucaia.">
+  <meta property="og:image" content="https://almiraraujo1.github.io/wdd231/camara/imagens/hero_camara_caucaia.jpg">
+  <meta property="og:url" content="https://almiraraujo1.github.io/wdd231/camara/associacao.html">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/associacao.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header>
+    <a href="index.html" class="marca">
+      <img src="imagens/favicon.png" alt="Logo da Câmara de Comércio de Caucaia" width="48" height="48">
+      <span class="marca-texto">
+        <span class="nome-site">Caucaia</span>
+        <span class="subtitulo-site">Câmara de Comércio</span>
+      </span>
+    </a>
+
+    <button id="menu-botao" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav id="menu-principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="diretorio.html">Diretório</a></li>
+        <li><a href="associacao.html" aria-current="page" class="ativo">Associe-se</a></li>
+        <li><a href="diretorio.html">Descobrir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== CONTEÚDO PRINCIPAL ========== -->
+  <main>
+    <h1 class="titulo-pagina">Associe-se à Câmara</h1>
+
+    <div class="associacao">
+
+      <!-- Formulário: método get, envia para a página de agradecimento -->
+      <form action="agradecimento.html" method="get" class="formulario">
+        <p class="nota-obrigatorio">Campos com * são obrigatórios.</p>
+
+        <label>
+          <span>Nome *</span>
+          <input type="text" id="nome" name="nome" title="Digite o seu nome" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          <span>Sobrenome *</span>
+          <input type="text" id="sobrenome" name="sobrenome" title="Digite o seu sobrenome" autocomplete="family-name" required>
+        </label>
+
+        <!-- pattern: só letras, espaços e hífens, com no mínimo 7 caracteres -->
+        <label>
+          <span>Cargo na organização</span>
+          <input type="text" id="cargo" name="cargo" title="Use apenas letras, espaços e hífens (mínimo de 7 caracteres)" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ \-]{7,}">
+        </label>
+
+        <label>
+          <span>E-mail *</span>
+          <input type="email" id="email" name="email" title="Digite o seu e-mail" autocomplete="email" placeholder="exemplo@email.com" required>
+        </label>
+
+        <label>
+          <span>Número de celular *</span>
+          <input type="tel" id="celular" name="celular" title="Digite o seu celular com DDD, por exemplo (85) 99999-9999" autocomplete="tel" placeholder="(85) 99999-9999" pattern="\(?\d{2}\)?\s?9?\d{4}-?\d{4}" required>
+        </label>
+
+        <label>
+          <span>Nome da empresa/organização *</span>
+          <input type="text" id="empresa" name="empresa" title="Digite o nome da sua empresa ou organização" autocomplete="organization" required>
+        </label>
+
+        <label>
+          <span>Nível de associação *</span>
+          <select id="nivel" name="nivel" title="Escolha o nível de associação" autocomplete="off" required>
+            <option value="">Selecione um nível</option>
+            <option value="np">Associação NP (sem fins lucrativos, sem taxa)</option>
+            <option value="bronze">Associação Bronze</option>
+            <option value="silver">Associação Prata</option>
+            <option value="gold">Associação Ouro</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Descrição da atividade/organização</span>
+          <textarea id="descricao" name="descricao" rows="4" title="Conte um pouco sobre a sua atividade ou organização" autocomplete="off"></textarea>
+        </label>
+
+        <!-- Pulo do Gato-Campo oculto: o JavaScript coloca aqui a data e a hora em que a página abriu -->
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit" class="botao-enviar">Enviar pedido</button>
+      </form>
+
+      <!-- Cartões dos níveis (embaixo do formulário no celular, à direita no computador) -->
+      <section class="niveis" aria-labelledby="titulo-niveis">
+        <h2 id="titulo-niveis">Níveis de associação</h2>
+
+        <div class="niveis-lista">
+          <article class="nivel-cartao nivel-np">
+            <h3>Associação NP</h3>
+            <p>Para organizações sem fins lucrativos. Sem taxa.</p>
+            <a href="diretorio.html" class="link-modal" data-modal="modal-np">Saiba mais</a>
+          </article>
+
+          <article class="nivel-cartao nivel-bronze">
+            <h3>Associação Bronze</h3>
+            <p>O primeiro passo para fazer parte da câmara.</p>
+            <a href="diretorio.html" class="link-modal" data-modal="modal-bronze">Saiba mais</a>
+          </article>
+
+          <article class="nivel-cartao nivel-prata">
+            <h3>Associação Prata</h3>
+            <p>Mais treinamentos, descontos e divulgação.</p>
+            <a href="diretorio.html" class="link-modal" data-modal="modal-prata">Saiba mais</a>
+          </article>
+
+          <article class="nivel-cartao nivel-ouro">
+            <h3>Associação Ouro</h3>
+            <p>Todos os benefícios e destaque na página inicial.</p>
+            <a href="diretorio.html" class="link-modal" data-modal="modal-ouro">Saiba mais</a>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===== Modais (janelas com os benefícios de cada nível) ===== -->
+    <dialog id="modal-np" class="modal" aria-labelledby="titulo-modal-np">
+      <h2 id="titulo-modal-np">Associação NP</h2>
+      <p><strong>Taxa:</strong> gratuita</p>
+      <ul>
+        <li>Para organizações sem fins lucrativos</li>
+        <li>Cadastro no diretório de empresas</li>
+        <li>Convites para eventos abertos</li>
+        <li>Boletim mensal com as novidades</li>
+      </ul>
+      <button type="button" class="botao-fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="modal" aria-labelledby="titulo-modal-bronze">
+      <h2 id="titulo-modal-bronze">Associação Bronze</h2>
+      <p><strong>Taxa:</strong> R$ 80 por mês</p>
+      <ul>
+        <li>Tudo da Associação NP</li>
+        <li>Link para o seu site no diretório</li>
+        <li>1 treinamento por semestre</li>
+        <li>10% de desconto em eventos</li>
+      </ul>
+      <button type="button" class="botao-fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-prata" class="modal" aria-labelledby="titulo-modal-prata">
+      <h2 id="titulo-modal-prata">Associação Prata</h2>
+      <p><strong>Taxa:</strong> R$ 150 por mês</p>
+      <ul>
+        <li>Tudo da Associação Bronze</li>
+        <li>2 treinamentos por semestre</li>
+        <li>20% de desconto em eventos</li>
+        <li>Divulgação nas redes sociais da câmara</li>
+        <li>Chance de aparecer em destaque na página inicial</li>
+      </ul>
+      <button type="button" class="botao-fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-ouro" class="modal" aria-labelledby="titulo-modal-ouro">
+      <h2 id="titulo-modal-ouro">Associação Ouro</h2>
+      <p><strong>Taxa:</strong> R$ 300 por mês</p>
+      <ul>
+        <li>Tudo da Associação Prata</li>
+        <li>Treinamentos ilimitados</li>
+        <li>30% de desconto em eventos</li>
+        <li>Eventos exclusivos para membros Ouro</li>
+        <li>Posição de destaque na página inicial</li>
+        <li>Espaço de publicidade nos eventos da câmara</li>
+      </ul>
+      <button type="button" class="botao-fechar">Fechar</button>
+    </dialog>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer>
+    <div class="rodape-contato">
+      <p class="rodape-titulo">Câmara de Comércio de Caucaia</p>
+      <p>R. Joaquim Bento Cavalcante, 620 - Grilo</p>
+      <p>Caucaia - CE, 61600-440</p>
+      <p>contato@camaracaucaia.com.br</p>
+      <p>(85) 3342-1021</p>
+    </div>
+
+    <div class="rodape-redes">
+      <a href="https://www.youtube.com" target="_blank" rel="noopener">
+        <img src="imagens/youtube.svg" alt="YouTube" width="24" height="24">
+      </a>
+      <a href="https://x.com" target="_blank" rel="noopener">
+        <img src="imagens/redesocialx.svg" alt="X" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+        <img src="imagens/linkedin.svg" alt="LinkedIn" width="24" height="24">
+      </a>
+    </div>
+
+    <div class="rodape-projeto">
+      <p class="rodape-titulo">Projeto de Aula WDD231</p>
+      <p>Almir Araujo</p>
+      <p>&copy; <span id="ano"></span> Câmara de Comércio de Caucaia</p>
+      <p>Última modificação: <span id="ultima-modificacao"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

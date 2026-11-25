@@ -99,5 +99,21 @@
   .destaques-lista {
     grid-template-columns: repeat(3, 1fr);
   }
-  /* Final CSS Página Inicial */  
+  /* Final CSS Página Inicial */
+  
+  /* Início CSS Página de Associação */
+  /* Formulário à esquerda e cartões dos níveis à direita */
+  .associacao {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .formulario .botao-enviar {
+    width: auto;
+  }
+  /* Final CSS Página de Associação */
 }

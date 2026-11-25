@@ -407,3 +407,224 @@ footer p {
 }
 
 /* Final CSS Página Inicial */
+
+/* Início CSS Página de Associação */
+
+/* ----- Formulário ----- */
+.associacao {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.formulario {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #00000026;
+}
+
+.nota-obrigatorio {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.6rem;
+  border: 2px solid #999999;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: var(--cor-texto);
+  font: inherit;
+  font-weight: normal;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: 3px solid var(--cor-secundaria);
+  border-color: var(--cor-primaria);
+}
+
+/* Borda vermelha quando o campo foi preenchido errado */
+.formulario input:user-invalid {
+  border-color: #c0392b;
+}
+
+/* Botões: enviar, fechar a janela e voltar */
+.botao-enviar,
+.botao-fechar,
+.botao-voltar {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formulario .botao-enviar {
+  width: 100%;
+}
+
+.botao-enviar:hover,
+.botao-fechar:hover,
+.botao-voltar:hover {
+  background-color: #083a4f;
+}
+
+/* ----- Cartões dos níveis ----- */
+.niveis h2 {
+  font-size: 1.3rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.niveis-lista {
+  display: grid;
+  gap: 1rem;
+}
+
+.nivel-cartao {
+  background-color: #ffffff;
+  border-top: 6px solid #999999;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px #00000026;
+  animation: entrada-cartao 0.8s ease-out both;   /* Animação ao abrir a página */
+}
+
+/* Pulo do Gato: Cada cartão começa um pouquinho depois do anterior */
+.nivel-cartao:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nivel-cartao:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.nivel-cartao:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Cor da borda de cada nível */
+.nivel-np {
+  border-top-color: #2e8b57;
+}
+
+.nivel-bronze {
+  border-top-color: #cd7f32;
+}
+
+.nivel-prata {
+  border-top-color: #a8a8a8;
+}
+
+.nivel-ouro {
+  border-top-color: #d4a017;
+}
+
+.nivel-cartao h3 {
+  font-size: 1.1rem;
+}
+
+.nivel-cartao p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.nivel-cartao a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+
+@keyframes entrada-cartao {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Quem prefere menos movimento não vê a animação */
+@media (prefers-reduced-motion: reduce) {
+  .nivel-cartao {
+    animation: none;
+  }
+}
+
+/* ----- Modais ----- */
+.modal {
+  width: 90%;
+  max-width: 420px;
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.modal::backdrop {
+  background-color: #00000099;   /* fundo escuro atrás da janela */
+}
+
+.modal h2 {
+  font-size: 1.3rem;
+  color: var(--cor-primaria);
+  margin-bottom: 0.75rem;
+}
+
+.modal ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.modal li {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ----- Página de agradecimento ----- */
+.agradecimento {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #00000026;
+}
+
+.dados-enviados {
+  margin: 1rem 0 1.5rem 0;
+}
+
+.dados-enviados dt {
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+.dados-enviados dd {
+  margin: 0 0 0.75rem 0;
+  overflow-wrap: anywhere;   
+}
+
+/* Final CSS Página de Associação */
