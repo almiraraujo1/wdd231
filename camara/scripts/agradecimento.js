@@ -11,7 +11,7 @@ function mostrar(id, valor) {
   elemento.textContent = valor || "Não informado";
 }
 
-// Preencho os campos obrigatórios do formulário
+// Preencher os campos obrigatórios do formulário
 mostrar("dado-nome", parametros.get("nome"));
 mostrar("dado-sobrenome", parametros.get("sobrenome"));
 mostrar("dado-email", parametros.get("email"));
